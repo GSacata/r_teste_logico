@@ -1,8 +1,8 @@
 # Pergunta 1
 
-# array_exerc = [2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21]
-array_exerc = [2, 1, 5, 1, 1, 1, 7, 9, 13, 127, 21] #DEV-ER
+array_exerc = [2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21]
 search_num = 1
+number_stash = []
 
 """
 for pos, value in enumerate(array_exerc):
@@ -16,23 +16,21 @@ for pos, value in enumerate(array_exerc):
     else:
         pass
 """
-
-def replace_values(num):
-    x = array_exerc.pop(num)
-    array_exerc.insert(0, x)
-
-def arrange_number(num):
-    for v in array_exerc:
+def search_number(num):
+    for pos, v in enumerate(array_exerc):
         if v == num:
-            replace_values(v)
+            x = array_exerc.pop(pos)
+            number_stash.append(x)
+            break
         else:
             continue
+    
+while search_num in array_exerc:
+    search_number(search_num)
 
-
-
-arrange_number(search_num)
 
 print(array_exerc)
+print(number_stash)
 
 
 # array_exerc.sort()

@@ -24,3 +24,4 @@ https://www.w3schools.com/python/python_ref_list.asp
 
 NOTAS
 Esse "não ira trocar posições" me faz pensar que não é para usar a função de ordenação do python.
+pop(x) remove o indice x, não o valor?
