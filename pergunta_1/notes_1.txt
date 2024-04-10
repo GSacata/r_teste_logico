@@ -4,10 +4,16 @@ ENUNCIADO
 
 
 PASSOS
+.Verificar posições do array inicial e final.
+.Correr todo o array, procurando o número desejado (exerc.: 1)
+.caso o número atual seja o desejado, trocar o lugar do atual para o desejado, e vice-versa
 
 
 
 TESTES
+[ ] Input número 1
+[ ] outro input
+[ ] Input valor inválido (número que não consta, outro caractere...)
 
 
 
@@ -16,3 +22,4 @@ REFERÊNCIAS
 
 
 NOTAS
+Esse "não ira trocar posições" me faz pensar que não é para usar a função de ordenação do python.
