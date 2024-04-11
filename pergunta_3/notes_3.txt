@@ -12,10 +12,13 @@ PASSOS
 
 
 TESTES
+[ ] Valor proposto pelo exercício
 [ ] Valor acima do máximo possível
 [ ] Valor abaixo do mínimo possível
-[ ] Teste com 1 + 1
-[ ] Teste com outros valores repetidos
+[ ] 1 + 1
+[ ] Outros valores repetidos
+[ ] String como input, parseavel
+[ ] String como input, não parseavel
 
 
 
