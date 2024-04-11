@@ -1,8 +1,19 @@
 # Pergunta 1
 
+# TEST 1: Input número 1
 array_exerc = [2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21]
 search_num = 1
 number_stash = []
+
+# # TEST 2: outro input
+# array_exerc = [2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21]
+# search_num = 2
+# number_stash = []
+
+# # TEST 3: Input valor inválido (número que não consta, outro caractere...)
+# array_exerc = [2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21]
+# search_num = 'a'
+# number_stash = []
 
 
 def search_number(num):
@@ -28,8 +39,3 @@ while search_num in number_stash:
 
 print(array_exerc)
 print(number_stash)
-
-
-# array_exerc.sort()
-# for pos, value in enumerate(array_exerc):
-#     print(f'{pos}, {value}')
