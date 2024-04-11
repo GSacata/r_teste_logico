@@ -3,10 +3,19 @@ ENUNCIADO
 
 
 PASSOS
-
+.Array inicial
+.Função que recebe x.
+.Verificação de número maior que máximo e menor que mínimo (poupa execução de código).
+..Para esse ponto, precisa de função que ordene a lista, e faça a soma dos mínimos e dos máximos, para estabelecer esses limites.
+.(0, x) -> (x, 0)
+.Para pegar valores repetidos, precisa de uma função que verifique se o x e y da tupla são iguais, e se for, verifica se o mesmo número existe mais de uma vez no array.
 
 
 TESTES
+[ ] Valor acima do máximo possível
+[ ] Valor abaixo do mínimo possível
+[ ] Teste com 1 + 1
+[ ] Teste com outros valores repetidos
 
 
 
