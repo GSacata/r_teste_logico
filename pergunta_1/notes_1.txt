@@ -11,9 +11,11 @@ PASSOS
 
 
 TESTES
-[-] Input número 1
-[-] outro input
-[-] Input valor inválido (número que não consta, outro caractere...)
+[-] Input número 1.
+[-] outro input.
+[-] Input valor inválido (número que não consta, outro caractere...).
+[ ] input de string (int) para ser convertido em número.
+[ ] input de string (str) para ser convertido em número; deve levantar exceção.
 
 Resultados:
 Todos os testes retornaram sucesso, mas o teste de caractere diferente não dá nenhum feedback. Pretendo melhorar isso com verificações e raise exceptions.
