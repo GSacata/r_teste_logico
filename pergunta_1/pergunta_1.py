@@ -4,18 +4,7 @@ array_exerc = [2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21]
 search_num = 1
 number_stash = []
 
-"""
-for pos, value in enumerate(array_exerc):
-    print(f'{pos}, {value}')
 
-print(f'\n\n')
-
-for pos, value in enumerate(array_exerc):
-    if value == search_num:
-        print(f'{pos}, {value}')
-    else:
-        pass
-"""
 def search_number(num):
     for pos, v in enumerate(array_exerc):
         if v == num:
@@ -24,9 +13,17 @@ def search_number(num):
             break
         else:
             continue
+
+def replenish_array():
+    x = number_stash.pop(0)
+    array_exerc.insert(0, x)
+
     
 while search_num in array_exerc:
     search_number(search_num)
+
+while search_num in number_stash:
+    replenish_array()
 
 
 print(array_exerc)
