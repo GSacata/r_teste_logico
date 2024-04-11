@@ -9,13 +9,13 @@ PASSOS
 ..Para esse ponto, precisa de função que ordene a lista, e faça a soma dos mínimos e dos máximos, para estabelecer esses limites.
 .(0, x) -> (x, 0)
 .Para pegar valores repetidos, precisa de uma função que verifique se o x e y da tupla são iguais, e se for, verifica se o mesmo número existe mais de uma vez no array.
+.Freio para não buscar tuplas permutadas (buscar (1, 2) e buscar (2, 1) dá na mesma)
 
 
 TESTES
 [ ] Valor proposto pelo exercício
 [ ] Valor acima do máximo possível
 [ ] Valor abaixo do mínimo possível
-[ ] 1 + 1
 [ ] Outros valores repetidos
 [ ] String como input, parseavel
 [ ] String como input, não parseavel

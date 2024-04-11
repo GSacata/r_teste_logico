@@ -1,9 +1,28 @@
 # Pergunta 3
 
-# TEST 1
+# TEST 1: Valor proposto pelo exercício
 array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
 num_input = 2
-possible_combos = []
+existent_combos = []
+
+
+# # TEST 2: Valor acima do máximo possível
+# array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
+# num_input = 100
+# existent_combos = []
+
+
+# # TEST 3: Valor abaixo do mínimo possível
+# array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
+# num_input = -4
+# existent_combos = []
+
+
+# # TEST 4
+# array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
+# num_input = -4
+# existent_combos = []
+
 
 def input_barrier(param_num):
     array_exerc.sort()
@@ -19,11 +38,30 @@ def input_barrier(param_num):
         return False
     else:
         print(f"Input válido, {num_input}, executando função")
+        return True
 
 def check_combos(param_num):
     allowed = input_barrier(num_input)
     if allowed:
         print(f"Função executada")
+
+        [i, j, in_array_count] = [0, param_num, None]
+        # i = 0; j = param_num, in_array_count = None
+
+        while not i > param_num:
+            in_array_count = array_exerc.count(i)
+            
+
+            if i in array_exerc and j in array_exerc:
+                if i == j and in_array_count >= 2:
+                    existent_combos.append((i,j))
+                    i += 1; j -= 1
+                else:
+                    existent_combos.append((i,j))
+                    i += 1; j -= 1
+
+            else:
+                i += 1; j -= 1
     else:
         print(f"Função não executada")
     pass
