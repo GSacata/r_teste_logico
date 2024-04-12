@@ -5,12 +5,20 @@ array_exerc = [9, 2, 3, 1, 4]
 missing_numbers = []
 min_num = 0
 
+
 # #TEST: Array com número repetido (deve não checar números repetidos).
 # array_exerc = [9, 2, 3, 1, 4, 2, 4, 9]
 # missing_numbers = []
 # min_num = 0
 
 
+# #TEST: Array com outro número maior que o original.
+# array_exerc = [9, 2, 3, 1, 4, 13, 24, 1, 9]
+# missing_numbers = []
+# min_num = 0
+
+
+print("array_exerc, start", f"{array_exerc}")
 
 existent_numbers = []
 
@@ -44,7 +52,13 @@ def find_missing_num():
 
 find_missing_num()
 
+def append_miss_to_main():
+    for item in missing_numbers:
+        array_exerc.append(item)
 
-print("array_exerc", f"{array_exerc}")
+append_miss_to_main()
+
+
+print("array_exerc, end", f"{array_exerc}")
 print("missing_numbers", f"{missing_numbers}")
 print("existent_numbers", f"{existent_numbers}")
