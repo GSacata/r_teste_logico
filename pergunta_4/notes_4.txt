@@ -3,10 +3,19 @@ ENUNCIADO
 
 
 PASSOS
+.pegar todos os números existentes no array.
+.guardar o maior número em uma variável.
+.Usar o maior número como limite do for.
+.Ter um array que tenha os números inseridos.
 
 
 
 TESTES
+[ ] Array proposto.
+[ ] Array com outro número maior que o original.
+[ ] Array com número repetido (deve não checar números repetidos).
+[ ] Array com número negativo.
+[ ] Não-números (ex.: letra) no array.
 
 
 
