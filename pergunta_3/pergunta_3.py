@@ -1,17 +1,17 @@
 # Pergunta 3
 
-# # TEST: Valor proposto pelo exercício
-# array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
-# num_input = 2
-# existent_combos = []
-# checked_combinations = []
-
-
-# TEST: Valor possível de sua escolha
+# TEST: Valor proposto pelo exercício
 array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
-num_input = 9
+num_input = 2
 existent_combos = []
 checked_combinations = []
+
+
+# # TEST: Valor possível de sua escolha
+# array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
+# num_input = 9
+# existent_combos = []
+# checked_combinations = []
 
 
 # # TEST: Valor acima do máximo possível
@@ -38,6 +38,13 @@ checked_combinations = []
 # # TEST: Testar in_array_count com 8 (seria um 4 + 4, mas não existem dois 4 no array)
 # array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
 # num_input = 4
+# existent_combos = []
+# checked_combinations = []
+
+
+# # TEST: Valor proposto pelo exercício
+# array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4, 3, 6]
+# num_input = 8
 # existent_combos = []
 # checked_combinations = []
 
@@ -92,17 +99,18 @@ def check_combos(param_num):
 
                 else:
                     i += 1; j -= 1
+        
+        return True
+    
     else:
         print(f"Função não executada")
-    pass
+        return False
 
 combo_exists = check_combos(num_input)
-print(combo_exists)
-print(existent_combos)
 
-# if combo_exists:
-#     print(combo_exists)
-#     print(f"Combinações existem\n{possible_combos}")
-# else:
-#     print(combo_exists)
-#     print(f"Não existem combinações para o número inserido")
+if combo_exists:
+    print(combo_exists)
+    print(f"Combinações existem\n{existent_combos}")
+else:
+    print(combo_exists)
+    print(f"Não existem combinações para o número inserido")
