@@ -16,6 +16,7 @@ TESTES
 [ ] Array com número repetido (deve não checar números repetidos).
 [ ] Array com número negativo.
 [ ] Não-números (ex.: letra) no array.
+[ ] Mínimo que não seja zero (valor positivo ou negativo).
 
 
 
@@ -24,3 +25,4 @@ REFERÊNCIAS
 
 
 NOTAS
+tentar fazer o mesmo exercício, mas com classe. Vamos ver o que vira.

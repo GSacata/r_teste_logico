@@ -3,10 +3,12 @@
 #TEST: Array proposto.
 array_exerc = [9, 2, 3, 1, 4]
 missing_numbers = []
+min_num = 0
 
 # #TEST: Array com número repetido (deve não checar números repetidos).
 # array_exerc = [9, 2, 3, 1, 4, 2, 4, 9]
 # missing_numbers = []
+# min_num = 0
 
 
 
@@ -16,13 +18,32 @@ def get_existent_num(param_array):
     for item in param_array:
         # existent_numbers.append(item) if item not in existent_numbers else ...
         if item not in existent_numbers:
-            print(f"Appending {item}")
+            # print(f"Appending {item}")
             existent_numbers.append(item)
         else:
-            print(f"{item} already checked")
+            # print(f"{item} already checked")
             pass
 
 get_existent_num(array_exerc)
+
+existent_numbers.sort()
+
+max_num = existent_numbers[-1]
+
+def find_missing_num():
+    global min_num
+    
+    while min_num <= max_num:
+        if min_num not in existent_numbers:
+            # print(f"Appending {min_num}")
+            missing_numbers.append(min_num)
+            min_num += 1
+        else:
+            # print(f"{min_num} already exists")
+            min_num += 1
+
+find_missing_num()
+
 
 print("array_exerc", f"{array_exerc}")
 print("missing_numbers", f"{missing_numbers}")
