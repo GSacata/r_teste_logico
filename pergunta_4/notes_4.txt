@@ -21,7 +21,7 @@ TESTES
 
 
 POSSÍVEIS MELHORIAS
-[ ] Inserir números faltantes de forma ordenada.
+[-] Inserir números faltantes de forma ordenada. (Até que consegui fazer, vide ordered_append_miss_to_main, mas não faz sentido manter isso pois a lista pode vir naturalmente bagunçada, eu só estaria inserindo alguns valores ordenados no meio da lista bagunçada.)
 
 
 

@@ -1,9 +1,9 @@
 # Pergunta 4
 
-# # TEST: Array proposto.
-# array_exerc = [9, 2, 3, 1, 4]
-# missing_numbers = []
-# min_num = 0
+# TEST: Array proposto.
+array_exerc = [9, 2, 3, 1, 4]
+missing_numbers = []
+min_num = 0
 
 
 # # TEST: Array com número repetido (deve não checar números repetidos).
@@ -30,10 +30,10 @@
 # min_num = 0
 
 
-# TEST: Não-números (ex.: array com números) no array.
-array_exerc = [9, [1, 5], 2, 3, 1, 4]
-missing_numbers = []
-min_num = 0
+# # TEST: Não-números (ex.: array com números) no array.
+# array_exerc = [9, [1, 5], 2, 3, 1, 4]
+# missing_numbers = []
+# min_num = 0
 
 
 print("array_exerc, start", f"{array_exerc}")
@@ -88,6 +88,16 @@ def append_miss_to_main():
 
 append_miss_to_main()
 
+# def ordered_append_miss_to_main():
+#     for item in missing_numbers:
+#         for pos, main_array_item in enumerate(array_exerc):
+#             if item <= main_array_item:
+#                 array_exerc.insert(pos, item)
+#                 break
+#             else:
+#                 pass
+
+# ordered_append_miss_to_main()
 
 print("array_exerc, end", f"{array_exerc}")
 print("missing_numbers", f"{missing_numbers}")
