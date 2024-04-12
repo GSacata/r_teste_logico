@@ -1,27 +1,41 @@
 # Pergunta 3
 
-# TEST 1: Valor proposto pelo exercício
+# TEST: Valor proposto pelo exercício
 array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
 num_input = 2
 existent_combos = []
 
 
-# # TEST 2: Valor acima do máximo possível
+# # TEST: Valor possível de sua escolha
+# array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
+# num_input = 7
+# existent_combos = []
+
+
+# # TEST: Valor acima do máximo possível
 # array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
 # num_input = 100
 # existent_combos = []
 
 
-# # TEST 3: Valor abaixo do mínimo possível
+# # TEST: Valor abaixo do mínimo possível
 # array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
 # num_input = -4
 # existent_combos = []
 
 
-# # TEST 4
+# # TEST: Testar in_array_count com 8 (seria um 4 + 4, mas não existem dois 4 no array)
 # array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
-# num_input = -4
+# num_input = 8
 # existent_combos = []
+# checked_combinations = []
+
+
+# # TEST: Testar in_array_count com 8 (seria um 4 + 4, mas não existem dois 4 no array)
+# array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
+# num_input = 4
+# existent_combos = []
+# checked_combinations = []
 
 
 def input_barrier(param_num):
@@ -46,18 +60,24 @@ def check_combos(param_num):
         print(f"Função executada")
 
         [i, j, in_array_count] = [0, param_num, None]
-        # i = 0; j = param_num, in_array_count = None
 
         while not i > param_num:
+            
+            current_tuple = (i, j)
             in_array_count = array_exerc.count(i)
             
 
             if i in array_exerc and j in array_exerc:
-                if i == j and in_array_count >= 2:
-                    existent_combos.append((i,j))
+                if i != j:
+                    existent_combos.append(current_tuple)
                     i += 1; j -= 1
+
+                elif i == j and in_array_count >= 2:
+                    existent_combos.append(current_tuple)
+                    i += 1; j -= 1
+                    break
+                
                 else:
-                    existent_combos.append((i,j))
                     i += 1; j -= 1
 
             else:
@@ -68,6 +88,7 @@ def check_combos(param_num):
 
 combo_exists = check_combos(num_input)
 print(combo_exists)
+print(existent_combos)
 
 # if combo_exists:
 #     print(combo_exists)
