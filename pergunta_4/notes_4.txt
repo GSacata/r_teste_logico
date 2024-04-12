@@ -15,8 +15,8 @@ TESTES
 [-] Array com outro número maior que o original.
 [-] Array com número repetido (deve não checar números repetidos).
 [-] Array com número negativo.
-[ ] Não-números (ex.: letra) no array.
-[ ] Mínimo que não seja zero (valor positivo ou negativo).
+[-] Não-números (ex.: letra) no array.
+[-] Não-números (ex.: array com números) no array.
 
 
 
