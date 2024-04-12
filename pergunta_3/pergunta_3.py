@@ -7,11 +7,11 @@
 # checked_combinations = []
 
 
-# # TEST: Valor possível de sua escolha
-# array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
-# num_input = 7
-# existent_combos = []
-# checked_combinations = []
+# TEST: Valor possível de sua escolha
+array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
+num_input = 9
+existent_combos = []
+checked_combinations = []
 
 
 # # TEST: Valor acima do máximo possível
@@ -28,11 +28,11 @@
 # checked_combinations = []
 
 
-# TEST: Testar in_array_count com 8 (seria um 4 + 4, mas não existem dois 4 no array)
-array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
-num_input = 8
-existent_combos = []
-checked_combinations = []
+# # TEST: Testar in_array_count com 8 (seria um 4 + 4, mas não existem dois 4 no array)
+# array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
+# num_input = 8
+# existent_combos = []
+# checked_combinations = []
 
 
 # # TEST: Testar in_array_count com 8 (seria um 4 + 4, mas não existem dois 4 no array)
@@ -70,6 +70,7 @@ def check_combos(param_num):
             current_tuple = (i, j)
             reverse_current_tuple = (j, i)
             in_array_count = array_exerc.count(i)
+            checked_combinations.append(current_tuple)
 
             if reverse_current_tuple in checked_combinations:
                 print(f"{current_tuple} already checked")
@@ -79,21 +80,17 @@ def check_combos(param_num):
                 if i in array_exerc and j in array_exerc:
                     if i != j:
                         existent_combos.append(current_tuple)
-                        checked_combinations.append(current_tuple)
                         i += 1; j -= 1
 
                     elif i == j and in_array_count >= 2:
                         existent_combos.append(current_tuple)
-                        checked_combinations.append(current_tuple)
                         i += 1; j -= 1
                         break
                     
                     else:
-                        checked_combinations.append(current_tuple)
                         i += 1; j -= 1
 
                 else:
-                    checked_combinations.append(current_tuple)
                     i += 1; j -= 1
     else:
         print(f"Função não executada")
