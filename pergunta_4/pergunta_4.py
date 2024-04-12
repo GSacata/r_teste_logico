@@ -1,9 +1,9 @@
 # Pergunta 4
 
-#TEST: Array proposto.
-array_exerc = [9, 2, 3, 1, 4]
-missing_numbers = []
-min_num = 0
+# #TEST: Array proposto.
+# array_exerc = [9, 2, 3, 1, 4]
+# missing_numbers = []
+# min_num = 0
 
 
 # #TEST: Array com número repetido (deve não checar números repetidos).
@@ -16,6 +16,12 @@ min_num = 0
 # array_exerc = [9, 2, 3, 1, 4, 13, 24, 1, 9]
 # missing_numbers = []
 # min_num = 0
+
+
+#TEST: Array proposto.
+array_exerc = [9, 2, 3, 1, 4, 25, 18, 3]
+missing_numbers = []
+min_num = -4
 
 
 print("array_exerc, start", f"{array_exerc}")

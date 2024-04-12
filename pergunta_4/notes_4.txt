@@ -12,9 +12,9 @@ PASSOS
 
 TESTES
 [-] Array proposto.
-[ ] Array com outro número maior que o original.
+[-] Array com outro número maior que o original.
 [-] Array com número repetido (deve não checar números repetidos).
-[ ] Array com número negativo.
+[-] Array com número negativo.
 [ ] Não-números (ex.: letra) no array.
 [ ] Mínimo que não seja zero (valor positivo ou negativo).
 
