@@ -3,10 +3,20 @@ ENUNCIADO
 
 
 PASSOS
-
+.Input da palavra buscada.
+.Sistema de conferência de branches (se já foi ou não buscado).
+.Jeito para criar a árvore facilmente.
+.Flexibilidade de input (pessoa inserir "goiaba", a árvore vai considerar também a palavra "Goiaba")
+.Busca ordenada (primeiro esquerda, depois direita).
+.Saber reconhecer se é um node vazio ou se tem valor; saber reconhecer quando tem que voltar o caminho.
 
 
 TESTES
+[ ] Proposta inicial, buscando "Goiaba".
+[ ] Buscar palavra inexistente.
+[ ] Testar no olho o caminho escrito.
+[ ] Buscar palavra na primeira folha.
+[ ] Buscar palavra na folha mais distante.
 
 
 
