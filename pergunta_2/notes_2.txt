@@ -17,11 +17,12 @@ TESTES
 [ ] Testar no olho o caminho escrito.
 [ ] Buscar palavra na primeira folha.
 [ ] Buscar palavra na folha mais distante.
+[ ] Alterar árvore inicial, e ver se o programa todo responde a essa alteração.
 
 
 
 REFERÊNCIAS
-
+https://github.com/GSacata/teste-logica-datacake/blob/master/pergunta_2.py
 
 
 NOTAS
