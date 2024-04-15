@@ -15,11 +15,11 @@ class Node():
         self.r_br = None
         self.l_open = True
         self.r_open = True
-        print(vars(self))
 
     def create_node(self, left_value, right_value):
         self.l_br = Node(left_value)
         self.r_br = Node(right_value)
+        print(f"{self.node_value}, L: {self.l_br.node_value}, R: {self.r_br.node_value}")
     
     def create_exerc_tree(self):
         self.create_node("Morango", "Pera")
