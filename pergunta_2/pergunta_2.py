@@ -70,9 +70,29 @@ class Node():
 # tree = Node("Maçã")
 # tree.create_node("Laranja", "")
 
+
+# TEST: Proposta inicial, buscando "Goiaba".
 tree = Node("Maçã")
 tree.create_exerc_tree()
-# tree.search_node("Goiaba")
+tree.search_node("Goiaba")
+
+# # TEST: Buscar palavra na folha à direita (segunda busca de um node).
+# tree = Node("Maçã")
+# tree.create_exerc_tree()
 # tree.search_node("Limão")
-tree.search_node("Banana")
-# tree.search_node("Pera")
+
+# # TEST: Conferir no olho o caminho escrito.
+# tree = Node("Maçã")
+# tree.create_exerc_tree()
+# tree.search_node("Abacaxi")
+
+# # TEST: Buscar palavra na folha mais distante.
+# tree = Node("Maçã")
+# tree.create_exerc_tree()
+# tree.search_node("Cebola")
+
+# # TEST: Buscar palavra na primeira folha.
+# tree = Node("Maçã")
+# tree.create_exerc_tree()
+# tree.search_node("Maçã")
+

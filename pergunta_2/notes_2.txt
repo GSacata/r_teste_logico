@@ -12,12 +12,14 @@ PASSOS
 
 
 TESTES
-[ ] Proposta inicial, buscando "Goiaba".
+[-] Proposta inicial, buscando "Goiaba".
 [ ] Buscar palavra inexistente.
-[ ] Testar no olho o caminho escrito.
-[ ] Buscar palavra na primeira folha.
-[ ] Buscar palavra na folha mais distante.
+[-] Conferir no olho o caminho escrito.
+[-] Buscar palavra na primeira folha.
+[-] Buscar palavra na folha mais distante.
+[-] Buscar palavra na folha à direita (segunda busca de um node).
 [ ] Alterar árvore inicial, e ver se o programa todo responde a essa alteração.
+[ ] Buscar por palavra existente, mas "variada" (ex.: lowercase, traço no meio...)
 
 
 
