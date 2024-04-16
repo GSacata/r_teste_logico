@@ -8,6 +8,8 @@ l_flag: true ou false (indica se aquele caminho é válido ou não)
 r_flag: true ou false (indica se aquele caminho é válido ou não) 
 """
 
+found_term = 0
+
 class Node():
     def __init__(self, node_value):
         self.node_value = node_value
@@ -30,49 +32,38 @@ class Node():
     
     def search_node(self, term):
         
-        # while self.node_value is not term:
-        #     print(f"Searching {self.node_value}...")
+        global found_term
 
-        #     if self.l_open:
-        #         if self.l_br is not None and self.l_open:
-        #             self.l_open = False
-        #             self.l_br.search_node(term)
-        #         else:
-        #             print("No available node found, closing path...")
-        #             self.l_open = False
-        #             continue
+        while found_term == 0:
+
+            if self.node_value is term:
+                print(f"Found {term}")
+                found_term += 1
+                break
             
-        #     if self.r_open:
-        #         if self.r_br is not None and self.r_open:
-        #             self.r_open = False
-        #             self.r_br.search_node(term)
-        #         else:
-        #             print("No available node found, closing path...")
-        #             self.r_open = False
-        #             continue
+            elif self.l_open:
+                print(f"Searching {self.node_value}...")
+                if self.l_br is None:
+                    self.l_open = False
+                    print(f"Nothing on left branch...")
+                else:
+                    print(f"Searching left branch, {self.l_br.node_value}...")
+                    self.l_open = False
+                    self.l_br.search_node(term)
             
-        #     else:
-        #         pass
-
-        #     print(f"Found {term}")
-        #     break
-
-        if self.node_value is term:
-            print(f"Found {term}")
-        elif self.l_open:
-            print(f"Searching {self.node_value}...")
-            if self.l_br is None:
-                print("Nothing here")
+            elif self.r_open:
+                print(f"Searching {self.node_value}...")
+                if self.r_br is None:
+                    self.r_open = False
+                    print(f"Nothing on right branch...")
+                else:
+                    print(f"Searching right branch, {self.r_br.node_value}...")
+                    self.r_open = False
+                    self.r_br.search_node(term)
+            
             else:
-                self.l_br.search_node(term)
-        elif self.r_open:
-            print(f"Searching {self.node_value}...")
-            if self.r_br is None:
-                print("Nothing here")
-            else:
-                self.r_br.search_node(term)
-        else:
-            print("Searching done")
+                print(f"Searching {self.node_value} node done")
+                break
 
 
 # DEV-COMM
@@ -82,5 +73,6 @@ class Node():
 tree = Node("Maçã")
 tree.create_exerc_tree()
 # tree.search_node("Goiaba")
-tree.search_node("Limão")
-# tree.search_node("Banana")
+# tree.search_node("Limão")
+tree.search_node("Banana")
+# tree.search_node("Pera")
