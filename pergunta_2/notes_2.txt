@@ -20,8 +20,8 @@ TESTES
 [-] Buscar palavra na folha à direita (segunda busca de um node).
 [ ] Alterar árvore inicial, e ver se o programa todo responde a essa alteração.
 [ ] Buscar por palavra existente, mas "variada" (ex.: lowercase, traço no meio...)
-[ ] Escrita de caminho, caminho direto ("Goiaba", tudo à esquerda)
-[ ] Escrita de caminho, caminho corrigido ("Limão", precisa apagar Goiaba do caminho)
+[-] Escrita de caminho, caminho direto ("Goiaba", tudo à esquerda)
+[-] Escrita de caminho, caminho corrigido ("Limão", precisa apagar Goiaba do caminho)
 
 
 
