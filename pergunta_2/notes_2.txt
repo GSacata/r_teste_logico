@@ -13,7 +13,7 @@ PASSOS
 
 TESTES
 [-] Proposta inicial, buscando "Goiaba".
-[ ] Buscar palavra inexistente.
+[-] Buscar palavra inexistente.
 [-] Conferir no olho o caminho escrito.
 [-] Buscar palavra na primeira folha.
 [-] Buscar palavra na folha mais distante.

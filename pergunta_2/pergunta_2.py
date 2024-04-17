@@ -72,6 +72,9 @@ class Node():
             else:
                 print(f"Searching {self.node_value} node done")
                 break
+        
+        if found_term == 0:
+            print(f"No path for {term}")
 
     def fill_path(self, term):
         global term_path
@@ -92,12 +95,12 @@ class Node():
 # tree.create_node("Laranja", "")
 
 
-# TEST: 
-# Proposta inicial, buscando "Goiaba".
-# Escrita de caminho, caminho direto ("Goiaba", tudo à esquerda)
-tree = Node("Maçã")
-tree.create_exerc_tree()
-tree.search_node("Goiaba")
+# # TEST: 
+# # Proposta inicial, buscando "Goiaba".
+# # Escrita de caminho, caminho direto ("Goiaba", tudo à esquerda)
+# tree = Node("Maçã")
+# tree.create_exerc_tree()
+# tree.search_node("Goiaba")
 
 # # TEST: 
 # # Buscar palavra na folha à direita (segunda busca de um node).
@@ -120,6 +123,11 @@ tree.search_node("Goiaba")
 # tree = Node("Maçã")
 # tree.create_exerc_tree()
 # tree.search_node("Maçã")
+
+# # TEST: Buscar palavra inexistente.
+# tree = Node("Maçã")
+# tree.create_exerc_tree()
+# tree.search_node("Alho")
 
 # # TEST: Alterar árvore inicial, e ver se o programa todo responde a essa alteração 1.
 # tree = Node("Beterraba")
