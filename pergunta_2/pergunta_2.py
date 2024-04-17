@@ -31,6 +31,11 @@ class Node():
         self.r_br.r_br.create_node("", "Laranja")
         self.r_br.r_br.r_br.create_node("Banana", "Cebola")
     
+    def create_custom_tree(self):
+        self.create_node("Uva", "Limão")
+        self.l_br.create_node("Abóbora", "")
+        self.r_br.create_node("Cenoura", "Costela")
+    
     def search_node(self, term):
         
         global found_term
@@ -87,12 +92,12 @@ class Node():
 # tree.create_node("Laranja", "")
 
 
-# # TEST: 
-# # Proposta inicial, buscando "Goiaba".
-# # Escrita de caminho, caminho direto ("Goiaba", tudo à esquerda)
-# tree = Node("Maçã")
-# tree.create_exerc_tree()
-# tree.search_node("Goiaba")
+# TEST: 
+# Proposta inicial, buscando "Goiaba".
+# Escrita de caminho, caminho direto ("Goiaba", tudo à esquerda)
+tree = Node("Maçã")
+tree.create_exerc_tree()
+tree.search_node("Goiaba")
 
 # # TEST: 
 # # Buscar palavra na folha à direita (segunda busca de um node).
@@ -115,3 +120,18 @@ class Node():
 # tree = Node("Maçã")
 # tree.create_exerc_tree()
 # tree.search_node("Maçã")
+
+# # TEST: Alterar árvore inicial, e ver se o programa todo responde a essa alteração 1.
+# tree = Node("Beterraba")
+# tree.create_custom_tree()
+# tree.search_node("Costela")
+
+# # TEST: Alterar árvore inicial, e ver se o programa todo responde a essa alteração 2.
+# tree = Node("Beterraba")
+# tree.create_custom_tree()
+# tree.search_node("Cenoura")
+
+# # TEST: Alterar árvore inicial, e ver se o programa todo responde a essa alteração 3.
+# tree = Node("Beterraba")
+# tree.create_custom_tree()
+# tree.search_node("Abóbora")

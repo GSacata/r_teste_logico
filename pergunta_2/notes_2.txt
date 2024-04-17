@@ -18,10 +18,15 @@ TESTES
 [-] Buscar palavra na primeira folha.
 [-] Buscar palavra na folha mais distante.
 [-] Buscar palavra na folha à direita (segunda busca de um node).
-[ ] Alterar árvore inicial, e ver se o programa todo responde a essa alteração.
-[ ] Buscar por palavra existente, mas "variada" (ex.: lowercase, traço no meio...)
+[-] Alterar árvore inicial, e ver se o programa todo responde a essa alteração. 3 testes.
 [-] Escrita de caminho, caminho direto ("Goiaba", tudo à esquerda)
 [-] Escrita de caminho, caminho corrigido ("Limão", precisa apagar Goiaba do caminho)
+
+
+
+MELHORIAS
+[ ] Buscar por palavra existente, mas "variada" (ex.: lowercase, traço no meio...)
+[ ] Criar método de reset da árvore (voltando as flags todas para "False" ou "True")
 
 
 
