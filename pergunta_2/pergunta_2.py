@@ -95,12 +95,12 @@ class Node():
 # tree.create_node("Laranja", "")
 
 
-# # TEST: 
-# # Proposta inicial, buscando "Goiaba".
-# # Escrita de caminho, caminho direto ("Goiaba", tudo à esquerda)
-# tree = Node("Maçã")
-# tree.create_exerc_tree()
-# tree.search_node("Goiaba")
+# TEST: 
+# Proposta inicial, buscando "Goiaba".
+# Escrita de caminho, caminho direto ("Goiaba", tudo à esquerda)
+tree = Node("Maçã")
+tree.create_exerc_tree()
+tree.search_node("Goiaba")
 
 # # TEST: 
 # # Buscar palavra na folha à direita (segunda busca de um node).
