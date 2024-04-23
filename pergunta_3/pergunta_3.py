@@ -35,14 +35,14 @@ checked_combinations = []
 # checked_combinations = []
 
 
-# # TEST: Testar in_array_count com 8 (seria um 4 + 4, mas não existem dois 4 no array)
+# # TEST: Outros valores repetidos
 # array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4]
 # num_input = 4
 # existent_combos = []
 # checked_combinations = []
 
 
-# # TEST: Valor proposto pelo exercício
+# # TEST: Modificar array de forma que uma combinação que não existia (ex.: 3, 5) passe a existir. Insira 3 no array
 # array_exerc = [1, 15, 2, 7, 2, 5, 7, 1, 4, 3, 6]
 # num_input = 8
 # existent_combos = []
@@ -77,28 +77,31 @@ def check_combos(param_num):
             current_tuple = (i, j)
             reverse_current_tuple = (j, i)
             in_array_count = array_exerc.count(i)
-            checked_combinations.append(current_tuple)
 
             if reverse_current_tuple in checked_combinations:
-                print(f"{current_tuple} already checked")
+                # print(f"{current_tuple} already checked")
                 i += 1; j -= 1
             
             else:
                 if i in array_exerc and j in array_exerc:
                     if i != j:
                         existent_combos.append(current_tuple)
+                        # checked_combinations.append(current_tuple)
                         i += 1; j -= 1
 
                     elif i == j and in_array_count >= 2:
                         existent_combos.append(current_tuple)
+                        checked_combinations.append(current_tuple) # continue cria outra volta de while e não deixa o código chegar até o momento apropriado para a inserção no 'checked_combinations'
                         i += 1; j -= 1
-                        break
+                        continue
                     
                     else:
                         i += 1; j -= 1
 
                 else:
                     i += 1; j -= 1
+            
+            checked_combinations.append(current_tuple)
         
         return True
     
@@ -109,8 +112,10 @@ def check_combos(param_num):
 combo_exists = check_combos(num_input)
 
 if combo_exists:
+    print(f"Combinações existem: {existent_combos}")
+    print(f"Combinações testadas: {checked_combinations}")
     print(combo_exists)
-    print(f"Combinações existem\n{existent_combos}")
 else:
+    print(f"Não existem combinações para o número inserido: {num_input}")
+    print(f"Combinações testadas: {checked_combinations}")
     print(combo_exists)
-    print(f"Não existem combinações para o número inserido")

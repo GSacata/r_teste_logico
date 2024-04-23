@@ -18,10 +18,14 @@ TESTES
 [-] Valor acima do máximo possível
 [-] Valor abaixo do mínimo possível
 [-] Outros valores repetidos
-[ ] String como input, parseavel
-[ ] String como input, não parseavel
 [-] Testar in_array_count com 8 (seria um 4 + 4, mas não existem dois 4 no array)
 [-] Modificar array de forma que uma combinação que não existia (ex.: 3, 5) passe a existir. Insira 3 no array
+
+
+
+MELHORIAS
+[ ] String como input, parseavel
+[ ] String como input, não parseavel
 
 
 
