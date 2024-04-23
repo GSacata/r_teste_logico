@@ -16,8 +16,8 @@ class Node():
         self.node_value = node_value
         self.l_br = None
         self.r_br = None
-        self.l_open = True
-        self.r_open = True
+        self.l_content = True
+        self.r_content = True
 
     def create_node(self, left_value, right_value):
         self.l_br = Node(left_value)
@@ -51,22 +51,22 @@ class Node():
                 found_term += 1
                 break
             
-            elif self.l_open:
+            elif self.l_content:
                 if self.l_br is None:
-                    self.l_open = False
+                    self.l_content = False
                     print(f"Nothing on left branch...")
                 else:
                     print(f"Searching left branch, {self.l_br.node_value}...")
-                    self.l_open = False
+                    self.l_content = False
                     self.l_br.search_node(term)
             
-            elif self.r_open:
+            elif self.r_content:
                 if self.r_br is None:
-                    self.r_open = False
+                    self.r_content = False
                     print(f"Nothing on right branch...")
                 else:
                     print(f"Searching right branch, {self.r_br.node_value}...")
-                    self.r_open = False
+                    self.r_content = False
                     self.r_br.search_node(term)
             
             else:
