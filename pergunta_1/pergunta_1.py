@@ -1,11 +1,11 @@
 # Pergunta 1
 
-# TEST 1: Input número 1
+# TEST 1: Input número 1, valor proposto pelo exercício.
 array_exerc = [2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21]
 search_num = 1
 number_stash = []
 
-# # TEST 2: outro input
+# # TEST 2: outro input válido.
 # array_exerc = [2, 1, 5, 2, 5, 2, 1, 1, 1, 7, 9, 13, 127, 21]
 # search_num = 2
 # number_stash = []
@@ -16,7 +16,7 @@ number_stash = []
 # number_stash = []
 
 
-def search_number(num):
+def search_in_array(num):
     for pos, v in enumerate(array_exerc):
         if v == num:
             x = array_exerc.pop(pos)
@@ -31,11 +31,11 @@ def replenish_array():
 
     
 while search_num in array_exerc:
-    search_number(search_num)
+    search_in_array(search_num)
 
 while search_num in number_stash:
     replenish_array()
 
-
+print(f"Input: {search_num}")
 print(array_exerc)
-print(number_stash)
+# print(number_stash)
