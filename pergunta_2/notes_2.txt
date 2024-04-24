@@ -27,7 +27,7 @@ TESTES
 MELHORIAS
 [ ] Buscar por palavra existente, mas "variada" (ex.: lowercase, traço no meio...)
 [ ] Criar método de reset da árvore (voltando as flags todas para "False" ou "True")
-[ ] Refatorar nomes de flags (funciona, mas está confuso)
+[-] Refatorar nomes de flags (funciona, mas está confuso)
 
 
 
